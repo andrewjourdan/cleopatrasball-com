@@ -234,11 +234,19 @@
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.smoke{opacity:.5}}
 </style>
+<link rel="canonical" href="https://cleopatrasball.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cleopatra's Ball">
+<meta property="og:url" content="https://cleopatrasball.com/">
+<meta property="og:description" content="A proposed singles ball in Las Vegas. Explore the concept and register interest.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cleopatra's Ball">
+<meta name="twitter:description" content="Explore the proposed Las Vegas ball and register interest.">
 </head>
 <body>
 <div class="bg" aria-hidden="true"></div>
 
-<div class="ribbon">Las Vegas &nbsp;·&nbsp; Opening Late Summer 2028 &nbsp;·&nbsp; Waitlist Now Open</div>
+<div class="ribbon">Las Vegas &nbsp;·&nbsp; Opening Late Summer 2028 &nbsp;·&nbsp; Register Interest</div>
 
 <header class="nav">
   <a href="#top" class="logo" aria-label="Cleopatra's Ball home">
@@ -301,11 +309,7 @@
       <a class="btn" href="#waitlist">Join the Royal Waitlist</a>
       <a class="btn ghost" href="#court">Meet the Divine Court</a>
     </div>
-    <div class="count" aria-label="Countdown to opening season">
-      <div><b id="cd-d">—</b><small>Days</small></div>
-      <div><b id="cd-h">—</b><small>Hours</small></div>
-      <div><b id="cd-m">—</b><small>Minutes</small></div>
-    </div>
+    <p class="lead">Proposed opening: late summer 2028. Exact date and venues are not confirmed.</p>
   </div>
 </section>
 
@@ -728,37 +732,13 @@
     <div class="head reveal">
       <div class="orn">𓆸</div>
       <h2>Join the Court</h2>
-      <p class="lead">The waitlist gets first access to opening-season tickets, founding-guest pricing, and the first invitations to the Pharaoh's Table.</p>
+      <p class="lead">Register interest for updates about the proposed opening season.</p>
     </div>
-    <!-- Static GitHub Pages site: point action at a form service (e.g. Formspree) to collect entries -->
-    <form class="wl reveal" id="wl" action="#" method="post" novalidate>
-      <div><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
-      <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-      <div>
-        <label for="seek">Hoping to Meet <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
-        <select id="seek" name="seek">
-          <option value="">Prefer not to say</option>
-          <option>Men</option>
-          <option>Women</option>
-          <option>Anyone</option>
-        </select>
-      </div>
-      <div>
-        <label for="tier">Interested In</label>
-        <select id="tier" name="tier">
-          <option>Courtier</option>
-          <option>Noble</option>
-          <option>Royal</option>
-          <option>Pharaoh's Table</option>
-          <option>Royal Weekend package</option>
-        </select>
-      </div>
-      <div class="full"><label for="city">Home City</label><input id="city" name="city" type="text" autocomplete="address-level2"></div>
-      <div class="full"><label class="chk"><input type="checkbox" name="age" required> I am 21 or older and single.</label></div>
-      <div class="full"><label class="chk"><input type="checkbox" name="news"> Send me news about Cleopatra's Ball, including the charity tour at cleopatrasball.org.</label></div>
-      <div class="full" style="text-align:center;margin-top:8px"><button class="btn" type="submit">Take My Place at Court</button></div>
-    </form>
-    <p class="thanks" id="thanks">Thoth has written your name in his book. Watch for your invitation.</p>
+    <div class="wl reveal">
+      <p>Register interest by email. Dates, venues, prices and benefits are proposed and subject to confirmation. No tickets are currently for sale; an inquiry does not reserve a place.</p>
+      <a class="btn" href="mailto:inquiry@cleopatrasball.com?subject=Cleopatra%27s%20Ball%20Interest">Register interest by email</a>
+      <p>If the button does not open your mail app, write to inquiry@cleopatrasball.com. Your message will be sent only when you send it from your email app.</p>
+    </div>
   </div>
 </section>
 
@@ -792,18 +772,7 @@
     }
   })();
 
-  // countdown to target opening (placeholder date: Aug 25, 2028, 8pm Pacific)
-  (function(){
-    var target=new Date('2028-08-25T20:00:00-07:00').getTime();
-    var d=document.getElementById('cd-d'),h=document.getElementById('cd-h'),m=document.getElementById('cd-m');
-    function tick(){
-      var diff=Math.max(0,target-Date.now());
-      d.textContent=Math.floor(diff/864e5);
-      h.textContent=String(Math.floor(diff%864e5/36e5)).padStart(2,'0');
-      m.textContent=String(Math.floor(diff%36e5/6e4)).padStart(2,'0');
-    }
-    tick();setInterval(tick,30000);
-  })();
+
 
   (function(){
     var els=document.querySelectorAll('.reveal');
@@ -812,16 +781,7 @@
     els.forEach(function(e){io.observe(e)});
   })();
 
-  (function(){
-    var f=document.getElementById('wl'),t=document.getElementById('thanks');
-    if(!f)return;
-    f.addEventListener('submit',function(e){
-      e.preventDefault();
-      if(!f.name.value.trim()||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim())){alert('Please enter your name and a valid email.');return}
-      if(!f.age.checked){alert('Please confirm you are 21 or older.');return}
-      f.style.display='none';t.style.display='block';
-    });
-  })();
+
 </script>
 </body>
 </html>

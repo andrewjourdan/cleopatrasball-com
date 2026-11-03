@@ -182,3 +182,14 @@ Sphere and Sphere Immersive Sound are trademarks of Sphere Entertainment Co. HOL
 Venue, dates, performers, fashion partners, and sponsors are subject to final signed agreements. The Lotus is a nicotine-free, drug-free, fragrance and light wearable in development; full ingredients will be published before launch. All events are open to all guests 21 and over without regard to any protected characteristic.
 
 © 2026 Andrew Jourdan
+
+
+## Website maintenance
+
+Canonical website: https://cleopatrasball.com/. GitHub Pages publishes main from the root; preserve CNAME.
+
+Run `python3 scripts/check_site.py` before opening a pull request. GitHub Actions checks metadata, local links and publishing files. Also review mobile and desktop layouts and email links.
+
+Interest registration uses email only. The former form did not send or save entries and has been removed. No precise countdown should be published until an opening date is confirmed.
+
+Protect main with pull requests and the required Site checks job, block force pushes and deletion, and enable merged-branch cleanup. Verify Pages HTTPS, domain ownership verification, registrar transfer lock, auto-renewal, DNSSEC and mailbox delivery separately.
