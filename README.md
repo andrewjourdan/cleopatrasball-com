@@ -4,7 +4,7 @@ The Singles Ball of Las Vegas · Opening Late Summer 2028
 
 In a city where Cleopatra already rules the casino floor, she finally throws her own party. 100% pure Egyptian cotton. Egyptian gold. One room full of singles, all looking for their lotus.
 
-🌐 Website: www.cleopatrasball.com ✉️ Inquiries: inquiry@cleopatrasball.com 🏛️ The charity tour: cleopatrasball.org
+🌐 Website: https://cleopatrasball.com/ ✉️ Inquiries: inquiry@cleopatrasball.com 🏛️ The charity tour: cleopatrasball.org
 
 Contents
 Two Temples on the Strip
@@ -161,17 +161,17 @@ Partner categories: Host Venue · Resort & Gaming · Queen's Arak & Spirits · E
 
 Join the Court
 
-The waitlist at cleopatrasball.com gets first access to opening-season tickets, founding-guest pricing, and the first invitations to the Pharaoh's Table.
+Register interest by email for updates on the proposed opening season. No ticket access, pricing or invitations are guaranteed.
 
-The waitlist asks for name, email, who you're hoping to meet (optional), ticket tier of interest, home city, and confirmation that you are 21 or older and single.
+The site does not collect form entries. Interest inquiries are sent through the visitor's own email app to inquiry@cleopatrasball.com.
 
 Repository
 File	Purpose
 index.html	The full single-page site: self-contained HTML, CSS, JavaScript, and inline SVG artwork
-CNAME	Custom domain for GitHub Pages: www.cleopatrasball.com
+CNAME	Custom domain for GitHub Pages: https://cleopatrasball.com/
 README.md	This file
 
-Hosted on GitHub Pages from the root of the main branch. The site loads Google Fonts (Limelight, Cinzel Decorative, Cormorant Garamond, Jost, and Noto Sans Egyptian Hieroglyphs) and has no other external dependencies. The waitlist form is front-end only until a form service is connected.
+Hosted on GitHub Pages from the root of the main branch. The site loads Google Fonts (Limelight, Cinzel Decorative, Cormorant Garamond, Jost, and Noto Sans Egyptian Hieroglyphs) and has no other external dependencies. Interest registration uses an explicit email link; there is no online registration backend.
 
 Legal Notice
 
