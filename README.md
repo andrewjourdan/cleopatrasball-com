@@ -1,5 +1,16 @@
 Cleopatra's Ball
 
+## What the owner needs to know
+
+The website runs on GitHub Pages. You do not need to run commands to keep it online.
+The preview and validation commands are for whoever makes website changes.
+
+- Keep the domain registration renewed and account recovery details current.
+- After changes, review the live site on a phone and computer and report broken links or missing inquiries promptly.
+- Interest registration opens the visitor's email app; it does not save an online registration. Test delivery to inquiry@cleopatrasball.com. Keep opening dates and venue descriptions marked as proposed until confirmed.
+
+Developer instructions: see [For developers](#for-developers) below.
+
 The Singles Ball of Las Vegas · Opening Late Summer 2028
 
 In a city where Cleopatra already rules the casino floor, she finally throws her own party. 100% pure Egyptian cotton. Egyptian gold. One room full of singles, all looking for their lotus.
@@ -184,7 +195,22 @@ Venue, dates, performers, fashion partners, and sponsors are subject to final si
 © 2026 Andrew Jourdan
 
 
-## Website maintenance
+## For developers
+
+### Local preview
+
+Use Python 3.12 or newer for the documented commands. This static site has no package installation or build step.
+From the repository root, run:
+
+```sh
+python3 -m http.server 8000
+```
+
+Open http://localhost:8000/; stop the preview with Ctrl+C.
+An internet connection is needed for externally loaded fonts.
+
+### Validation and publishing
+
 
 Canonical website: https://cleopatrasball.com/. GitHub Pages publishes main from the root; preserve CNAME.
 
