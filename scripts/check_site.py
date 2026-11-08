@@ -45,4 +45,5 @@ urls={n.text for n in ET.parse(ROOT/"sitemap.xml").findall(".//{http://www.sitem
 assert urls=={"https://cleopatrasball.com/"}
 assert '<form' not in texts["index.html"], "Connect and validate a real submission service before restoring a form"
 assert "2028-08-25T20:00:00-07:00" not in texts["index.html"], "Placeholder countdown must not return"
-print("PASS: both pages, local links, metadata, publishing files and countdown targets")
+assert "Strictly 21+" in texts["index.html"] and "21 or older" in texts["index.html"], "Keep the 21+ age requirement visible (state regulations)"
+print("PASS: page, local links, metadata, publishing files and 21+ age notice")
